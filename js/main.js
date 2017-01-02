@@ -229,8 +229,4 @@ var sections = $("section");
         offset: '55%'
     });
 });
-//加载时触发resize
-  $WIN.on('load', function() {    
-    $('html,body').resize();
-  }); 
 })(jQuery);
