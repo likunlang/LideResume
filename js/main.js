@@ -231,6 +231,6 @@ var sections = $("section");
 });
 //加载时触发resize
   $WIN.on('load', function() {    
-    $(window).resize();
+    $('html,body').resize();
   }); 
 })(jQuery);
