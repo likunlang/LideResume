@@ -76,6 +76,7 @@ html,body
 	font-weight: 700;
 	letter-spacing: 2px;
 }
+
 .navbar-default .navbar-nav > .current > a, 
 .navbar-default .navbar-nav > .current > a:focus, 
 .navbar-default .navbar-nav > .current > a:hover 
@@ -95,15 +96,32 @@ html,body
 	color: #FFD34E;
 }
 
+
 .navbar-fixed-top {
     padding: 2rem 0;
     transition: all 0.5s;
 }
-
 .top-nav-collapse {
     background: rgba(0,0,0,0.8);
     padding: 1.5rem 0;
 }
+@media only screen and (max-width: 768px){
+.navbar-default .navbar-brand{
+    display: none;
+    }
+.navbar-default{
+    background-color: rgba(0,0,0,0);
+    }
+.navbar-fixed-top{
+    padding: 5px;
+    }
+.top-nav-collapse {
+    background: rgba(0,0,0,0);
+    /*padding: 1.5rem 0;*/
+    }
+}
+
+
 
 #home{
     color: #fff;
@@ -279,7 +297,7 @@ p.lead {
     background-color: #aeaeae;
     position: absolute;
     top: 50%;
-    left: 2rem;
+    left: 1rem;
     margin-top: -3px;
 }
 
@@ -302,6 +320,22 @@ p.lead {
     padding-left: 8rem;
     margin-bottom: 4.2rem;
 }
+@media only screen and (max-width: 768px){
+#detail {
+    padding: 1rem;
+    }
+#detail .timeline-block {
+    padding-left: 5rem;
+    margin-bottom: 1rem;
+    }
+#detail .timeline-ico{
+    display: none;
+    }
+#detail .detail-content h2{
+    margin: 1rem 0;
+    }
+}
+
 
 #detail .timeline-ico {
     height: 4.8rem;
@@ -410,6 +444,11 @@ p.lead {
     font-size: 1.5rem;
     line-height: 2.4rem;
 }
+@media (max-width: 768px) {
+    .skill-bars li strong{
+        font-size: 1.2rem;
+    }
+}
 .skill-bars li .progress {
     background: #313131;
     position: relative;
@@ -474,6 +513,11 @@ p.lead {
 #separator .aoverlay{
     padding: 4rem 0;
 }
+@media only screen and (max-width: 768px){
+#separator .aoverlay{
+    padding: 1rem 0;
+    }
+}
 .aoverlay
 {
     background-color: rgba(255, 255, 255, 0.5);
@@ -483,6 +527,11 @@ p.lead {
 #resume
 {
     padding: 8rem 0;
+}
+@media only screen and (max-width: 768px){
+#resume{
+    padding: 2rem 0;
+    }
 }
 #resume .row{
     margin-bottom: 3rem;
@@ -500,6 +549,11 @@ p.lead {
 #flash{
     background-color: #eaeaea;
     padding: 7rem 0;
+}
+@media only screen and (max-width: 768px){
+#flash{
+    padding: 2rem 0;
+    }
 }
 #flash .flash-header,
 #flash .flash-content{
