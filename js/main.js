@@ -200,7 +200,7 @@ if (!$("html").hasClass('no-cssanimations')) {
             // trigger once only
         this.destroy(); 
         }, 
-        offset: '88%'
+        offset: '90%'
     }); 
 }
 
