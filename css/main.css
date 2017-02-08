@@ -11,8 +11,84 @@
 
  *
  * =================================================================== */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?9eyn7l');
+  src:  url('../fonts/icomoon.eot?9eyn7l#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?9eyn7l') format('truetype'),
+    url('../fonts/icomoon.woff?9eyn7l') format('woff'),
+    url('../fonts/icomoon.svg?9eyn7l#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 36px;
+  line-height: 1;
 
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-educate:before {
+  content: "\e900";
+}
+.icon-works:before {
+  content: "\e901";
+}
+.icon-code:before {
+  content: "\e902";
+}
+.icon-jquery:before {
+  content: "\e903";
+}
+.icon-bootstrap:before {
+  content: "\e904";
+}
+.icon-ajax:before {
+  content: "\e905";
+}
+.icon-mvc:before {
+  content: "\e906";
+}
+.icon-photoshop:before {
+  content: "\e907";
+}
+.icon-english:before {
+  content: "\e908";
+}
+.icon-html:before {
+  content: "\e909";
+}
+.icon-more:before {
+  content: "\e910";
+}
+.icon-comma:before {
+  content: "\e911";
+}
+.icon-address:before {
+  content: "\e912";
+}
+.icon-phone:before {
+  content: "\e913";
+}
+.icon-email:before {
+  content: "\e914";
+}
+.icon-top:before {
+  content: "\e915";
+}
+.icon-selected:before {
+  content: "\e916";
+}
 /* ===================================================================
  *  01. header - (_Main Stylesheet)
  *
@@ -20,6 +96,9 @@
 html,body
 {
     height: 100%;
+}
+.topic{
+    letter-spacing: 8px;
 }
 .main-header
 {
@@ -41,7 +120,7 @@ html,body
 {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    /*background-color: rgba(0, 0, 0, 0.4);*/
     position: absolute;
     top: 0;
     left: 0;
@@ -191,8 +270,8 @@ html,body
 
 
 #home .read-more:hover{
-    border-color:rgba(255, 255, 255,1);
-
+    border-color:#fff;
+    color: #fff;
 }
 .home-content h1{
     font-size: 3.6rem;
@@ -207,8 +286,8 @@ html,body
 }
 .home-content .home-intro span{
     display: inline-block;
-    font-size: 1.7rem;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 2.5rem;
+    color: #fff;
     line-height: 2.4rem;
     letter-spacing: .2rem;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
@@ -256,7 +335,7 @@ html,body
 .section-intro h3 {
     font-family: "montserrat-bold", sans-serif;
     font-size: 2rem;
-    color: #4C2405;
+    color: #888;
     text-transform: uppercase;
     letter-spacing: .15rem;
     margin-bottom: 0;
@@ -279,7 +358,7 @@ p.lead {
 
 #detail .detail-content h2 {
     margin: 4.8rem 0;
-    color: #4C2405;
+    color: #666;
     padding-left: 8rem;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -340,8 +419,8 @@ p.lead {
 #detail .timeline-ico {
     height: 4.8rem;
     width: 4.8rem;
-    line-height: 4.8rem;
-    background: #4C2405;
+    line-height: 6.6rem;
+    background: #0aa770;
     border-radius: 50%;
     text-align: center;
     color: #FFFFFF;
@@ -502,7 +581,7 @@ p.lead {
 
 
 #separator {
-    background: url(../images/portfolio3.jpg) no-repeat center bottom;
+    background: url(../images/portfolio3.jpg) no-repeat center center fixed;
     -webkit-background-size: 100%;
     background-size: 100%;
     width: 100%;
@@ -542,8 +621,8 @@ p.lead {
     letter-spacing: 1px;
 }
 #resume h1 span {
-    border-bottom: 3px solid #11ABB0;
-    padding-bottom: 6px;
+    border-bottom: 2px solid #0aa770;
+    padding-bottom: 2px;
 }
 
 #flash{
@@ -570,7 +649,7 @@ nav#filter a {
 }
 nav#filter a:hover, 
 nav#filter a.current {
-    background-color: #44BCDD;
+    background-color: #0aa770;
     color:#fff;
 }
 
@@ -796,7 +875,7 @@ footer {
     top: 0;
     right: 100%;
     width: 100%;
-    height: 4px;
+    height: 3px;
 }
 #preloader {
     position: fixed;
