@@ -969,7 +969,7 @@ html{
     margin: 1rem 0;
     }
 .service-desc p{
-    text-align: center;
+    /*text-align: center;*/
     }
 .service-icon [class^="icon-"], .service-icon [class*=" icon-"]{
     font-size: 5.6rem;
@@ -983,16 +983,13 @@ html{
 #separator .aoverlay{
     padding: 1rem 0;
     }
-.service-box{
+/*.service-box{
     padding: 2rem 1rem;
     height: 15rem;
 }
 .service-icon {
     margin-bottom: 0rem;
-}
-#more{
-    padding: 3rem 0;
-}
+}*/
 #contact{
     padding: 2rem 0;
 }
