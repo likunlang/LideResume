@@ -5,7 +5,7 @@
 
 (function($) {
 
-	"use strict";
+    "use strict";
 
     var cfg = {     
         defAnimation   : "fadeInUp",    // default css animation        
@@ -75,7 +75,7 @@ if($('.isotopeWrapper').length){
             //     easing: 'easeOutQuart',
             //     queue: false
             // }
-        });	
+        }); 
         return false;
     });        
     $(window).smartresize(function(){

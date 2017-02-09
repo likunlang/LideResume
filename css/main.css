@@ -147,24 +147,23 @@ h5{
     left: 0;
 }
 
-
 .nav > li > a {
     padding: 0;
 }
 .navbar-brand
 {
-	padding: 0;
-	height: inherit;
-	font-family: sans-serif;
+    padding: 0;
+    height: inherit;
+    font-family: sans-serif;
 }
 .navbar-default {
     background-color: rgba(0,0,0,0.2);
 }
 .navbar-default .navbar-brand {
     color: #fff;
-	font-size: 3.4rem;
-	font-weight: 700;
-	letter-spacing: 0.2rem;
+    font-size: 3.4rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
 }
 
 .navbar-default .navbar-nav > .current > a, 
@@ -183,7 +182,7 @@ h5{
 .navbar-default .navbar-nav > li > a:hover, 
 .navbar-default .navbar-nav > li > a:focus
 {
-	color: #FFD34E;
+    color: #FFD34E;
 }
 
 
@@ -931,13 +930,13 @@ html{
     display: none;
     }
 .navbar-default{
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.8);
     }
 .navbar-fixed-top{
     padding: 0.5rem;
     }
 .top-nav-collapse {
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0,0.6);
     /*padding: 1.5rem 0;*/
     }
 .main-header{
