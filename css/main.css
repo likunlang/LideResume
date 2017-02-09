@@ -966,6 +966,10 @@ html{
 #detail .detail-content h2{
     margin: 3rem 0;
 }
+#detail .timeline-ico [class^="icon-"], 
+#detail .timeline-ico [class*=" icon-"]{
+    font-size:3rem; 
+}
 .service-box{
     padding: 2rem 1rem;
     height:auto;
