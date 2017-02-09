@@ -944,30 +944,28 @@ html{
 .topic{
     letter-spacing: 0.2rem;
     }
-/*#home .read-more{
-    width: 8rem;
+.home-content h3{
+    font-size: 1.5rem;
+}
+.home-content h1{
+    font-size: 2.6rem;
+}
+.home-content .home-intro span{
+    font-size: 1rem;
+}
+#home .read-more{
+/*    width: 8rem;
     height: 3rem;
-    line-height: 2.8rem;
-}*/
+    line-height: 2.8rem;*/
+    font-size: 1.5rem;
+}
 #detail .timeline-ico {
     height: 2.5rem;
     width: 2.5rem;
     line-height: 3.2rem;
     left: 3.1rem;
 }
-/*#detail {
-    padding: 1rem;
-    }
-#detail .timeline-block {
-    padding-left: 5rem;
-    margin-bottom: 1rem;
-    }
-#detail .detail-content h2{
-    margin: 1rem 0;
-    }*/
-.service-desc p{
-    /*text-align: center;*/
-    }
+
 .service-icon [class^="icon-"], .service-icon [class*=" icon-"]{
     font-size: 5.6rem;
 }
