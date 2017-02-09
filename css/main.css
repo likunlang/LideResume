@@ -967,7 +967,8 @@ html{
     margin: 3rem 0;
 }
 .service-box{
-    padding: 1rem 1rem 0;
+    padding: 2rem 1rem;
+    height:auto;
 }
 .service-icon [class^="icon-"], .service-icon [class*=" icon-"]{
     font-size: 4.6rem;
