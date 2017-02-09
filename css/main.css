@@ -923,11 +923,11 @@ footer {
 
 @media only screen and (max-width: 768px){
 html{
-    font-size: 50%;
+    font-size: 55%;
     }
-body{
+/*body{
     font-size: 1.2rem;
-}
+}*/
 .navbar-default .navbar-brand{
     display: none;
     }
