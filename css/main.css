@@ -404,9 +404,8 @@ p.lead {
     text-align: center;
     color: #FFFFFF;
     position: absolute;
-    left: 2rem;
+    left: 0;
     top: 0;
-    margin-left: -2.4rem;
 }
 #detail .timeline-header .timeframe {
     font-family: "montserrat-regular", sans-serif;
@@ -975,7 +974,7 @@ html{
     height:auto;
 }
 .service-icon [class^="icon-"], .service-icon [class*=" icon-"]{
-    font-size: 4.6rem;
+    font-size: 4.5rem;
 }
 .skill-bars li{
     height: 0.5rem;
