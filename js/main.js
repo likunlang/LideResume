@@ -112,18 +112,6 @@ $('.smoothscroll').on('click', function (e) {
     });
 
 
-//parallax  视差插件
-if ($('.parallax').length){
-    $(window).stellar({
-        responsive:true,
-        scrollProperty: 'scroll',
-        parallaxElements: false,
-        horizontalScrolling: false,
-        horizontalOffset: 0,
-        verticalOffset: 0
-    });
-}
-
 //数字增长
 var statSection = $(".stats"),
 stats       = $(".stat-count");
@@ -206,7 +194,7 @@ if (!$("html").hasClass('no-cssanimations')) {
 
 //轮播图时间自定义
 $('.carousel').carousel({
-    interval: 3000
+    interval: 4000
 })
 
 //返回顶部
