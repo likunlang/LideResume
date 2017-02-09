@@ -925,9 +925,6 @@ footer {
 html{
     font-size: 55%;
     }
-/*body{
-    font-size: 1.2rem;
-}*/
 .navbar-default .navbar-brand{
     display: none;
     }
@@ -947,18 +944,18 @@ html{
 .topic{
     letter-spacing: 0.2rem;
     }
-#home .read-more{
+/*#home .read-more{
     width: 8rem;
     height: 3rem;
     line-height: 2.8rem;
-}
+}*/
 #detail .timeline-ico {
     height: 2.5rem;
     width: 2.5rem;
     line-height: 3.2rem;
     left: 3.1rem;
 }
-#detail {
+/*#detail {
     padding: 1rem;
     }
 #detail .timeline-block {
@@ -967,7 +964,7 @@ html{
     }
 #detail .detail-content h2{
     margin: 1rem 0;
-    }
+    }*/
 .service-desc p{
     /*text-align: center;*/
     }
