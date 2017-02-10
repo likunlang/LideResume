@@ -942,11 +942,8 @@ html{
 .navbar-default .navbar-brand{
     display: none;
     }
-.navbar-default{
-    background-color: rgba(0,0,0,0.4);
-    }
 .navbar-fixed-top{
-    padding: 0.1rem;
+    padding: 0.3rem;
     }
 .top-nav-collapse {
     background: rgba(0,0,0,0.8);

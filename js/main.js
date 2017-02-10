@@ -50,8 +50,14 @@ $(window).scroll(function(e) {
     var scrollTop = $(document).scrollTop();
     if(scrollTop > initTop){
        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+       if($(window).width()<768){
+        $('.nav').fadeOut('800');
+       }
     } else {
        $(".navbar-fixed-top").addClass("top-nav-collapse");
+       if($(window).width()<768){
+        $('.nav').fadeIn('800');
+       }
     }
     initTop = scrollTop;    
 });
