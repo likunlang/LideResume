@@ -51,12 +51,12 @@ $(window).scroll(function(e) {
     if(scrollTop > initTop){
        $(".navbar-fixed-top").removeClass("top-nav-collapse");
        if($(window).width()<768){
-        $('.nav').fadeOut('800');
+        $('.nav').fadeOut('fast');
        }
     } else {
        $(".navbar-fixed-top").addClass("top-nav-collapse");
        if($(window).width()<768){
-        $('.nav').fadeIn('800');
+        $('.nav').fadeIn('fast');
        }
     }
     initTop = scrollTop;    
