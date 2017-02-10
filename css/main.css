@@ -168,7 +168,7 @@ h5{
 .navbar-default .navbar-toggle .icon-bar{
     background-color: #fff;
     width: 2.8rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
 }
 .navbar-default .navbar-toggle{
     border-color: transparent; 
@@ -946,7 +946,7 @@ html{
     background-color: rgba(0,0,0,0.4);
     }
 .navbar-fixed-top{
-    padding: 0.1rem;
+    padding: 0.3rem;
     }
 .top-nav-collapse {
     background: rgba(0,0,0,0.8);
