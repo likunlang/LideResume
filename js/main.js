@@ -28,6 +28,10 @@ $WIN.on('load', function() {
     $("#preloader").delay(200).fadeOut("slow");
     //isotope显示图片重置
     $("html,body").resize();
+    //移动端取消动画
+    if($(window).width()<768){
+        $('.animate-this').removeClass('animate-this');
+    }
 
 
   }); 

@@ -822,8 +822,8 @@ footer {
 
 @media only screen and (max-width:768px) {
     #go-top {
-        bottom: 0;
-        right: 0;
+        bottom: 0.2rem;
+        right: 0.2rem;
     }
 }
 
