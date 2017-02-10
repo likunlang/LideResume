@@ -108,7 +108,9 @@ $('.portfolio-items').lightGallery({
     showThumbByDefault: true,
     hash: false,
     selector: ".portfolio-item" ,  
-    pause:3000
+    autoplayControls:false,
+    actualSize:false,
+    scale:0.3
 });
 
 //向下滚动动画
