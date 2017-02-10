@@ -167,7 +167,7 @@ h5{
 }
 .navbar-default .navbar-toggle .icon-bar{
     background-color: #fff;
-    width: 2.8rem;
+    width: 3rem;
     margin-bottom: 0.8rem;
 }
 .navbar-default .navbar-toggle{
@@ -196,7 +196,7 @@ h5{
     color: #FFD34E;
 }
 .navbar-toggle{
-    margin-right:-2rem;
+    margin:0.2rem -2rem 0 0;
 }
 
 .navbar-fixed-top {
