@@ -167,7 +167,8 @@ h5{
 }
 .navbar-default .navbar-toggle .icon-bar{
     background-color: #fff;
-    /*width: 2.4rem;*/
+    width: 2.8rem;
+    margin-bottom: 0.8rem;
 }
 .navbar-default .navbar-toggle{
     border-color: transparent; 
@@ -195,7 +196,7 @@ h5{
     color: #FFD34E;
 }
 .navbar-toggle{
-    margin:0  -2rem 0 0;
+    margin-right:-2rem;
 }
 
 .navbar-fixed-top {
@@ -945,11 +946,11 @@ html{
     background-color: rgba(0,0,0,0.4);
     }
 .navbar-fixed-top{
-    padding: 0rem;
+    padding: 0.1rem;
     }
 .top-nav-collapse {
     background: rgba(0,0,0,0.8);
-    padding: 0.2rem;
+    padding: 0.3rem;
     }
 .main-header{
         background-position: 44% 50%;
