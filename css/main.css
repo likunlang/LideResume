@@ -165,7 +165,17 @@ h5{
     font-weight: 700;
     letter-spacing: 0.2rem;
 }
-
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #fff;
+    /*width: 2.4rem;*/
+}
+.navbar-default .navbar-toggle{
+    border-color: transparent; 
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover{
+    background-color:transparent;
+}
 .navbar-default .navbar-nav > .current > a, 
 .navbar-default .navbar-nav > .current > a:focus, 
 .navbar-default .navbar-nav > .current > a:hover 
@@ -184,15 +194,17 @@ h5{
 {
     color: #FFD34E;
 }
-
+.navbar-toggle{
+    margin:0  -2rem 0 0;
+}
 
 .navbar-fixed-top {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     transition: all 0.5s;
 }
 .top-nav-collapse {
     background: rgba(0,0,0,0.8);
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 }
 
 #home{
@@ -930,14 +942,14 @@ html{
     display: none;
     }
 .navbar-default{
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.4);
     }
 .navbar-fixed-top{
-    padding: 0.5rem;
+    padding: 0rem;
     }
 .top-nav-collapse {
-    background: rgba(0,0,0,0.6);
-    /*padding: 1.5rem 0;*/
+    background: rgba(0,0,0,0.8);
+    padding: 0.2rem;
     }
 .main-header{
         background-position: 44% 50%;

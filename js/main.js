@@ -18,7 +18,6 @@
      * -------------------------------------------------- */
 
 $WIN.on('load', function() {    
-
     // force page scroll position to top at page refresh
     $('html, body').animate({ scrollTop: 0 }, 'normal');
 
@@ -34,18 +33,27 @@ $WIN.on('load', function() {
   }); 
 });
 
-
+//移动端nav按钮显示关闭
+$('body,#nav-wrap a').on('click',function(e){
+    if($('.collapse').hasClass('in')){
+        e.preventDefault();
+        $('.collapse').fadeOut('800');
+    }
+    else{
+        e.preventDefault();
+        $('.collapse').fadeIn('800'); 
+    }
+})
 //jQuery to collapse the navbar on scroll
 var initTop = 0;
 $(window).scroll(function(e) {
     var scrollTop = $(document).scrollTop();
     if(scrollTop > initTop){
-       $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    } else {
+       $(".navbar-fixed-top").addClass("top-nav-collapse");
     }
-    initTop = scrollTop;
-    
+    initTop = scrollTop;    
 });
 
 //图片筛选插件
@@ -197,7 +205,7 @@ $('.carousel').carousel({
     interval: 4000
 })
 
-//返回顶部
+//返回顶部按钮显示
 $(window).on('scroll', function() {
     if ($(window).scrollTop() >= 500) {
         $("#go-top").fadeIn(400);
