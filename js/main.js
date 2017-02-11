@@ -238,7 +238,7 @@ var sections = $("section");
          navigation_links.parent().removeClass("current");
             active_link.parent().addClass("current");
         },
-        offset: '55%'
+        offset: '60%'
     });
 
 })(jQuery);
