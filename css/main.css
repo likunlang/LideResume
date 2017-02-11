@@ -993,9 +993,13 @@ html{
     padding: 2rem 1rem;
     height:auto;
 }
-.service-icon [class^="icon-"], .service-icon [class*=" icon-"]{
-    font-size: 4.5rem;
+.service-icon{
+    margin-bottom: 0;
+    /*font-size: */
 }
+/*.service-icon [class^="icon-"], .service-icon [class*=" icon-"]{
+    font-size: 4.5rem;
+}*/
 .skill-bars li{
     height: 0.5rem;
 }
