@@ -106,7 +106,7 @@ h2{
     font-size: 3rem;
 }
 h3{
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 h4{
     font-size: 1.8rem;
@@ -198,7 +198,8 @@ h5{
     color: #FFD34E;
 }
 .navbar-toggle{
-    margin:0.2rem -2rem 0 0;
+    margin: 0 -2rem 0 0;
+    padding: 0.7rem 0.5rem 0;
 }
 
 .navbar-fixed-top {
@@ -813,11 +814,12 @@ footer {
     position: fixed;
     bottom: 2.5rem;
     right: 3rem;
+    background-color: rgba(0,0,0,0.2);
     z-index: 700;
 }
 #go-top a{
     text-decoration: none;
-    color:rgba(0,0,0,0.9);
+    color:#fff;
 }
 
 @media only screen and (max-width:768px) {
@@ -936,7 +938,7 @@ footer {
 
 @media only screen and (max-width: 768px){
 html{
-    font-size: 55%;
+    font-size: 58%;
     }
 .main-header{
     height: 105%;
@@ -956,7 +958,7 @@ html{
     }
 .topic{
     letter-spacing: 0.2rem;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     }
 .home-content h3{
     font-size: 1.5rem;
@@ -974,11 +976,17 @@ html{
     padding: 4rem 0;
 }
 #detail .detail-content h2{
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 #detail .timeline-ico [class^="icon-"], 
 #detail .timeline-ico [class*=" icon-"]{
     font-size:3rem; 
+}
+#detail .timeline-block{
+    padding-left: 5rem;
+}
+#detail .timeline-header h3{
+    font-size: 2.2rem;
 }
 .service-box{
     padding: 2rem 1rem;
@@ -993,6 +1001,9 @@ html{
 #separator .aoverlay{
     padding: 1rem 0;
     }
+#more{
+    padding: 4rem 2rem;
+}
 #contact h2{
     padding-bottom: 2rem;
 }
