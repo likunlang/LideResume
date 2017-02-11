@@ -114,7 +114,7 @@ $('.portfolio-items').lightGallery({
     selector: ".portfolio-item" ,  
     autoplayControls:false,
     actualSize:false,
-    scale:0.3
+    scale:0.5
 });
 
 //向下滚动动画
@@ -214,7 +214,7 @@ if (!$("html").hasClass('no-cssanimations')) {
 
 //轮播图时间自定义
 $('.carousel').carousel({
-    interval: 4000
+    interval: 4500
 })
 
 //返回顶部按钮显示
