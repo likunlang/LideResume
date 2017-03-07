@@ -1,16 +1,29 @@
 /* =================================================================== 
  *
- *  lide v1.0 Main Stylesheet
- *  12-05-2016
+ *  lide Main Stylesheet
+ *  2017/3/7
  *  ------------------------------------------------------------------
  *
- *  TOC:
- *  01. header
- *  02. skills
-
-
- *
+ *  样式:
+ *  01. 字体设置
+ *  02. css重置
+ *  03. header
+ *  04. detail
+ *  05. skills
+ *  06. resume
+ *  07. flash
+ *  08. more
+ *  09. contact
+ *  10. footer
+ *  11. preloader
+ *  12. 移动端响应式
  * =================================================================== */
+
+
+ /* ===================================================================
+ *  01. 字体设置 
+ *
+ * ------------------------------------------------------------------- */
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?9eyn7l');
@@ -91,8 +104,9 @@
 .icon-selected:before {
   content: "\e916";
 }
+
 /* ===================================================================
- *  01. header - (_Main Stylesheet)
+ *  02. css重置
  *
  * ------------------------------------------------------------------- */
 html,body
@@ -114,6 +128,12 @@ h4{
 h5{
     font-size: 1.4rem;
 }
+
+
+/* ===================================================================
+ *  03. header
+ *
+ * ------------------------------------------------------------------- */
 .topic{
     letter-spacing: 0.8rem;
     font-size: 3rem;
@@ -277,7 +297,6 @@ h5{
 
 }
 
-
 #home .read-more:hover{
     border-color:#fff;
     color: #fff;
@@ -323,6 +342,11 @@ h5{
     animation: vertical 3s ease infinite;
 }
 
+
+/* ===================================================================
+ *  04. detail
+ *
+ * ------------------------------------------------------------------- */
 #detail {
     position: relative;
     padding: 7rem 0 9rem;
@@ -436,6 +460,10 @@ p.lead {
 }
 
 
+/* ===================================================================
+ *  05. skills
+ *
+ * ------------------------------------------------------------------- */
 #skills{
     padding-top: 2rem;
 }
@@ -577,15 +605,15 @@ p.lead {
 }
 
 
-#resume
-{
+
+/* ===================================================================
+ *  06. resume
+ *
+ * ------------------------------------------------------------------- */
+#resume{
     padding: 8rem 0;
 }
-@media only screen and (max-width: 768px){
-#resume{
-    padding: 2rem 0;
-    }
-}
+
 #resume .row{
     margin-bottom: 3rem;
 }
@@ -603,24 +631,14 @@ p.lead {
     padding-bottom: 2px;
 }
 
+/* ===================================================================
+ *  07. flash
+ *
+ * ------------------------------------------------------------------- */
 #flash{
     background-color: #eaeaea;
     padding: 7rem 0;
 }
-@media only screen and (max-width: 768px){
-#flash{
-    padding: 2rem 0;
-    }
-}
-#flash .flash-header,
-#flash .flash-content{
-    margin-bottom: 2rem;
-}
-
-
-/*===========================
-  Portfolio
-============================ */
 nav#filter a {
     background-color: #fff;
     color:#555;
@@ -630,13 +648,6 @@ nav#filter a.current {
     background-color: #0aa770;
     color:#fff;
 }
-
-/* ------- */
-
-.isotopeWrapper article{
-    margin-bottom: 3rem;
-}
-
 nav#filter {
     margin-bottom:1.5em;
 }
@@ -650,10 +661,11 @@ nav#filter a {
     line-height: 3rem;
     text-decoration: none;
 }
-
+.isotopeWrapper article{
+    margin-bottom: 3rem;
+}
 
 .portfolio-items article img {width:100%;} 
-
 
 .portfolio-item {
     display: block;
@@ -772,6 +784,10 @@ nav#filter a {
 }
 
 
+/* ===================================================================
+ *  08. more
+ *
+ * ------------------------------------------------------------------- */
 #more {
     background-color: rgba(0,0,0,0.8);
     min-height: 20rem;
@@ -790,6 +806,11 @@ nav#filter a {
 .lunbo{
     font-size: 2.4rem;
 }
+
+/* ===================================================================
+ *  09. contact
+ *
+ * ------------------------------------------------------------------- */
 #contact{
     background:rgba(0,0,0,0.8);
     padding: 3rem 0;
@@ -812,6 +833,10 @@ nav#filter a {
     text-transform: uppercase;
 }
 
+/* ===================================================================
+ *  10. footer
+ *
+ * ------------------------------------------------------------------- */
 footer {
     background: rgba(0,0,0,0.8);
     padding: 2rem 0;
@@ -830,19 +855,9 @@ footer {
     color:#fff;
 }
 
-@media only screen and (max-width:768px) {
-    #go-top {
-        bottom: 0.2rem;
-        right: 0.2rem;
-    }
-}
-
 /* ===================================================================
- *  04. preloader - (_preloader-1.scss)
+ *  11. preloader
  *
- * ------------------------------------------------------------------- */
-/* ------------------------------------------------------------------- 
- * pace.js styles - minimal  - (_document-setup.scss)
  * ------------------------------------------------------------------- */
 .pace {
     -webkit-pointer-events: none;
@@ -851,7 +866,6 @@ footer {
     -moz-user-select: none;
     user-select: none;
 }
-
 .pace-inactive {
     display: none;
 }
@@ -881,7 +895,6 @@ footer {
 .oldie #preloader {
     display: none;
 }
-
 
 #loader {
     position: absolute;
@@ -944,82 +957,99 @@ footer {
     opacity: 1;
 }
 
+/* ===================================================================
+ *  12. 移动端响应式
+ *
+ * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px){
-html{
-    font-size: 58%;
+    html{
+        font-size: 58%;
+        }
+    .main-header{
+        height: 105%;
     }
-.main-header{
-    height: 105%;
-}
-.navbar-default .navbar-brand{
-    display: none;
+    .navbar-default .navbar-brand{
+        display: none;
+        }
+    .navbar-fixed-top{
+        padding: 0.3rem;
+        }
+    .top-nav-collapse {
+        background: rgba(0,0,0,0.8);
+        padding: 0.3rem;
+        }
+    .main-header{
+            background-position: 44% 50%;
+        }
+    .topic{
+        letter-spacing: 0.2rem;
+        font-size: 2.6rem;
+        }
+    .home-content h3{
+        font-size: 1.5rem;
     }
-.navbar-fixed-top{
-    padding: 0.3rem;
+    .home-content h1{
+        font-size: 2.6rem;
     }
-.top-nav-collapse {
-    background: rgba(0,0,0,0.8);
-    padding: 0.3rem;
+    .home-content .home-intro span{
+        font-size: 1.5rem;
     }
-.main-header{
-        background-position: 44% 50%;
+    #home .read-more{
+        font-size: 1.8rem;
     }
-.topic{
-    letter-spacing: 0.2rem;
-    font-size: 2.6rem;
+    #detail{
+        padding: 4rem 0;
     }
-.home-content h3{
-    font-size: 1.5rem;
-}
-.home-content h1{
-    font-size: 2.6rem;
-}
-.home-content .home-intro span{
-    font-size: 1.5rem;
-}
-#home .read-more{
-    font-size: 1.8rem;
-}
-#detail{
-    padding: 4rem 0;
-}
-#detail .detail-content h2{
-    margin: 2rem 0;
-}
-#detail .timeline-ico [class^="icon-"], 
-#detail .timeline-ico [class*=" icon-"]{
-    font-size:3rem; 
-}
-#detail .timeline-block{
-    padding-left: 5rem;
-}
-#detail .timeline-header h3{
-    font-size: 2.2rem;
-}
-.service-box{
-    padding: 2rem 1rem;
-    height:auto;
-}
-.service-icon{
-    margin-bottom: 0;
-    /*font-size: */
-}
-/*.service-icon [class^="icon-"], .service-icon [class*=" icon-"]{
-    font-size: 4.5rem;
-}*/
-.skill-bars li{
-    height: 0.5rem;
-}
-#separator .aoverlay{
-    padding: 1rem 0;
+    #detail .detail-content h2{
+        margin: 2rem 0;
     }
-#more{
-    padding: 4rem 2rem;
+    #detail .timeline-ico [class^="icon-"], 
+    #detail .timeline-ico [class*=" icon-"]{
+        font-size:3rem; 
+    }
+    #detail .timeline-block{
+        padding-left: 5rem;
+    }
+    #detail .timeline-header h3{
+        font-size: 2.2rem;
+    }
+    .service-box{
+        padding: 2rem 1rem;
+        height:auto;
+    }
+    .service-icon{
+        margin-bottom: 0;
+        /*font-size: */
+    }
+    .skill-bars li{
+        height: 0.5rem;
+    }
+    #separator .aoverlay{
+        padding: 1rem 0;
+        }
+    #resume{
+        padding: 2rem 0;
+        }
+    #flash{
+        padding: 2rem 0;
+        }
+    }
+    #flash .flash-header,
+    #flash .flash-content{
+        margin-bottom: 2rem;
+    }
+    #more{
+        padding: 4rem 2rem;
+    }
+    #contact h2{
+        padding-bottom: 2rem;
+    }
+    #go-top {
+            bottom: 0.2rem;
+            right: 0.2rem;
+    }
 }
-#contact h2{
-    padding-bottom: 2rem;
-}
-}
+
 @media only screen and (min-width: 768px){
     .comma{
         margin-top: -3rem;

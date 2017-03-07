@@ -1,5 +1,5 @@
 /* ===================================================================
- * Howdy - Main JS
+ * LIDE - Main JS
  *
  * ------------------------------------------------------------------- */ 
 
@@ -8,9 +8,9 @@
     "use strict";
 
     var cfg = {     
-        defAnimation   : "fadeInUp",    // default css animation        
-        scrollDuration : 800,           // smoothscroll duration
-        statsDuration  : 4000           // stats animation duration
+        defAnimation   : "fadeInUp",    // 默认CSS动画        
+        scrollDuration : 800,           // 平滑移动持续时间
+        statsDuration  : 4000           // 数字增长持续时间
     },  
     $WIN = $(window);
 
@@ -18,26 +18,24 @@
      * -------------------------------------------------- */
 
 $WIN.on('load', function() {    
-    // force page scroll position to top at page refresh
+    // 页面刷新、加载时动画
     $('html, body').animate({ scrollTop: 0 }, 'normal');
 
-  // will first fade out the loading animation 
+    // 预加载 
     $("#loader").fadeOut("slow", function(){
-
-    // will fade out the whole DIV that covers the website.
     $("#preloader").delay(200).fadeOut("slow");
+
     //isotope显示图片重置
     $("html,body").resize();
+
     //移动端取消动画
     if($(window).width()<768){
         $('.animate-this').removeClass('animate-this');
     }
-
-
   }); 
 });
 
-//移动端nav按钮显示关闭
+//移动端nav按钮显示/隐藏
 $('body,#nav-wrap a').on('click',function(e){
     if($('.collapse').hasClass('in')){
         e.preventDefault();
@@ -48,7 +46,8 @@ $('body,#nav-wrap a').on('click',function(e){
         $('.collapse').fadeIn('800'); 
     }
 })
-//jQuery to collapse the navbar on scroll
+
+//页面上下滑动时nav栏显示/隐藏
 var initTop = 0;
 $(window).scroll(function(e) {
     var scrollTop = $(document).scrollTop();
@@ -66,13 +65,11 @@ $(window).scroll(function(e) {
     initTop = scrollTop;    
 });
 
-//图片筛选插件
+//图片筛选插件isotope
 if($('.isotopeWrapper').length){
-
     var $container = $('.isotopeWrapper');
     var $resize = $('.isotopeWrapper').attr('id');
     // initialize isotope
-    
     $container.isotope({
         itemSelector: '.isotopeItem',
         resizable: false, // disable normal resizing
@@ -81,18 +78,12 @@ if($('.isotopeWrapper').length){
         }
         
     });
-
     $('#filter a').click(function(){
         $('#filter a').removeClass('current');
         $(this).addClass('current');
         var selector = $(this).attr('data-filter');
         $container.isotope({
             filter: selector,
-            // animationOptions: {
-            //     duration: 2000,
-            //     easing: 'easeOutQuart',
-            //     queue: false
-            // }
         }); 
         return false;
     });        
@@ -105,7 +96,6 @@ if($('.isotopeWrapper').length){
         });
     });
 }
-
 
 //lightGallery灯箱插件设置
 $('.portfolio-items').lightGallery({  
@@ -125,11 +115,11 @@ $('.smoothscroll').on('click', function (e) {
         e.stopPropagation(); 
         $('html, body').stop().animate({
         'scrollTop': $target.offset().top
-      }, cfg.scrollDuration, 'swing').promise().done(function () {
-        // check if menu is open
-        window.location.hash = target;
-      });
+    }, cfg.scrollDuration, 'swing').promise().done(function () {
+      // check if menu is open
+      window.location.hash = target;
     });
+});
 
 
 //数字增长
@@ -177,10 +167,7 @@ $WIN.on('load', function() {
     } 
 });
 
-
- /* Animations
-    * ------------------------------------------------------- */
-
+//animate-this Animation
 if (!$("html").hasClass('no-cssanimations')) {
     $('.animate-this').waypoint({
         handler: function(direction) {
@@ -240,5 +227,6 @@ var sections = $("section");
         },
         offset: '60%'
     });
+
 
 })(jQuery);
