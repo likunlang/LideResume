@@ -113,12 +113,6 @@ html,body
 {
     height: 100%;
 }
-body{
-    width: 100%;
-    position: relative;
-    left: -0.02rem;
-    float: left;
-}
 h1{
     font-size: 3.6rem
 }
