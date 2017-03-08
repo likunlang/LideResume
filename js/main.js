@@ -215,7 +215,7 @@ if (!$("html").hasClass('no-cssanimations')) {
 
 //轮播图时间自定义
 $('.carousel').carousel({
-    interval: 4500
+    interval: 3500
 })
 
 //返回顶部按钮显示
