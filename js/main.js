@@ -22,7 +22,7 @@ $WIN.on('load', function() {
     $('html, body').animate({ scrollTop: 0 }, 'normal');
 
     // 预加载 
-    $("#loader").fadeOut("slow", function(){
+    $("#loader").fadeOut("slow"); 
     $("#preloader").delay(200).fadeOut("slow");
 
     //isotope显示图片重置
@@ -32,17 +32,16 @@ $WIN.on('load', function() {
     if($(window).width()<768){
         $('.animate-this').removeClass('animate-this');
     }
-  }); 
 });
 
 //移动端nav按钮显示/隐藏
 $('body,#nav-wrap a').on('click',function(e){
     if($('.collapse').hasClass('in')){
-        e.preventDefault();
+        // e.preventDefault();
         $('.collapse').fadeOut('800');
     }
     else{
-        e.preventDefault();
+        // e.preventDefault();
         $('.collapse').fadeIn('800'); 
     }
 })
@@ -107,9 +106,10 @@ $('.portfolio-items').lightGallery({
     scale:0.5
 });
 
+
 //向下滚动动画
-$('.smoothscroll').on('click', function (e) {
-        var target = this.hash,
+$('.smoothscroll').on('click',function(e){
+    var target = this.hash,
         $target    = $(target);
         e.preventDefault();
         e.stopPropagation(); 
@@ -119,8 +119,22 @@ $('.smoothscroll').on('click', function (e) {
       // check if menu is open
       window.location.hash = target;
     });
-});
+})
 
+//navbar背景高亮
+var sections = $("section");
+var navigation_links = $("#nav-wrap a");
+sections.waypoint({
+  handler: function(direction) {
+       var active_section;
+        active_section = $(this.element);
+        if (direction === "up") active_section = active_section.prev();
+        var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
+     navigation_links.parent().removeClass("current");
+        active_link.parent().addClass("current");
+    },
+    offset: '60%'
+}); 
 
 //数字增长
 var statSection = $(".stats"),
@@ -212,21 +226,6 @@ $(window).on('scroll', function() {
         $("#go-top").fadeOut(400);
     }
 });
-
-//navbar背景高亮
-var sections = $("section");
-    var navigation_links = $("#nav-wrap a");
-    sections.waypoint({
-      handler: function(direction) {
-           var active_section;
-            active_section = $(this.element);
-            if (direction === "up") active_section = active_section.prev();
-            var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
-         navigation_links.parent().removeClass("current");
-            active_link.parent().addClass("current");
-        },
-        offset: '60%'
-    });
 
 
 })(jQuery);
