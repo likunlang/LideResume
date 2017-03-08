@@ -115,6 +115,9 @@ html,body
 }
 body{
     width: 100%;
+    position: absolute;
+    left: -0.02rem;
+    top: 0;
 }
 h1{
     font-size: 3.6rem
