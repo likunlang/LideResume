@@ -33,6 +33,9 @@ $WIN.on('load', function() {
         $('.animate-this').removeClass('animate-this');
     }
 });
+document.body.addEventListener('touchmove', function (event) {
+    event.preventDefault();
+}, false);
 
 //移动端nav按钮显示/隐藏
 $('body,#nav-wrap a').on('click',function(e){
