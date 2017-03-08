@@ -217,6 +217,7 @@ if (!$("html").hasClass('no-cssanimations')) {
 $('.carousel').carousel({
     interval: 3500
 })
+$('[data-toggle="tooltip"]').tooltip()
 
 //返回顶部按钮显示
 $(window).on('scroll', function() {
