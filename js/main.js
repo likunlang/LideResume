@@ -35,7 +35,7 @@ $WIN.on('load', function() {
 });
 document.body.addEventListener('touchmove', function (event) {
     event.preventDefault();
-}, false);
+}, true);
 
 //移动端nav按钮显示/隐藏
 $('body,#nav-wrap a').on('click',function(e){
