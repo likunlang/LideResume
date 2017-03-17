@@ -232,7 +232,6 @@ th {
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
-	overflow-x: hidden;
 }
 
 *,
@@ -248,6 +247,7 @@ body {
 	word-wrap: break-word;
 	-webkit-overflow-scrolling: touch;
 	-webkit-text-size-adjust: none;
+	overflow-x: hidden;
 }
 
 body,
