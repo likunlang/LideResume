@@ -112,7 +112,7 @@
 html,body
 {
     height: 100%;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 h1{
     font-size: 3.6rem
